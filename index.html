@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Price Target</h1>
+        <p>Calculate a 10% price increase.</p>
+        <form id="priceForm">
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" required>
+
+            <label for="lastPrice">Last Closing Price:</label>
+            <input type="number" id="lastPrice" min="0" step="0.01" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
